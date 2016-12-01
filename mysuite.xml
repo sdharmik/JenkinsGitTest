@@ -1,0 +1,10 @@
+<suite name="mysuite">
+
+    <test name="Selenium TestNG - 1">		
+		<classes>
+			<class name="com.core.mysuite.MyTestCase" />	
+						
+		</classes>
+	</test>
+	
+</suite>

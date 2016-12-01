@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="mysuite" duration-ms="101" started-at="2016-11-27T09:37:38Z" finished-at="2016-11-27T09:37:38Z">
+    <groups>
+    </groups>
+    <test name="Selenium TestNG - 1" duration-ms="101" started-at="2016-11-27T09:37:38Z" finished-at="2016-11-27T09:37:38Z">
+      <class name="com.core.mysuite.MyTestCase">
+        <test-method status="PASS" signature="initializations()[pri:0, instance:com.core.mysuite.MyTestCase@57a65cf1]" name="initializations" is-config="true" duration-ms="289" started-at="2016-11-27T15:07:38Z" finished-at="2016-11-27T15:07:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializations -->
+        <test-method status="PASS" signature="testCaseExecution(java.lang.reflect.Method)[pri:0, instance:com.core.mysuite.MyTestCase@57a65cf1]" name="testCaseExecution" is-config="true" duration-ms="69" started-at="2016-11-27T15:07:38Z" finished-at="2016-11-27T15:07:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.core.mysuite.MyTestCase.login() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseExecution -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.core.mysuite.MyTestCase@57a65cf1]" name="login" duration-ms="9" started-at="2016-11-27T15:07:38Z" finished-at="2016-11-27T15:07:38Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.core.mysuite.MyTestCase.login(MyTestCase.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.core.mysuite.MyTestCase -->
+    </test> <!-- Selenium TestNG - 1 -->
+  </suite> <!-- mysuite -->
+</testng-results>
