@@ -3,13 +3,12 @@
 <suite name="Failed suite [mysuite]">
   <test name="Selenium TestNG - 1(failed)">
     <classes>
-      <class name="com.core.mysuite.MyTestCase">
+      <class name="com.core.mysuite.TestCaseExecutor">
         <methods>
-          <include name="testCaseExecution"/>
           <include name="initializations"/>
-          <include name="login"/>
+          <include name="testCases" invocation-numbers="2 3"/>
         </methods>
-      </class> <!-- com.core.mysuite.MyTestCase -->
+      </class> <!-- com.core.mysuite.TestCaseExecutor -->
     </classes>
   </test> <!-- Selenium TestNG - 1(failed) -->
 </suite> <!-- Failed suite [mysuite] -->

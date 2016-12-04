@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-mysuite">
-              <span class="suite-name border-failed">mysuite</span>
+              <span class="suite-name border-skipped">mysuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods,  2 skipped,  2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-mysuite" class="hide-methods failed suite-mysuite"> (hide)</a> <!-- hide-methods failed suite-mysuite -->
-                      <a href="#" panel-name="suite-mysuite" class="show-methods failed suite-mysuite"> (show)</a> <!-- show-methods failed suite-mysuite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-mysuite" class="hide-methods skipped suite-mysuite"> (hide)</a> <!-- hide-methods skipped suite-mysuite -->
+                      <a href="#" panel-name="suite-mysuite" class="show-methods skipped suite-mysuite"> (show)</a> <!-- show-methods skipped suite-mysuite -->
                     </span>
-                    <div class="method-list-content failed suite-mysuite">
+                    <div class="method-list-content skipped suite-mysuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-mysuite" title="com.core.mysuite.MyTestCase" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mysuite" title="com.core.mysuite.TestCaseExecutor" hash-for-method="testCases(TC_004, , N)">testCases(TC_004, , N)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-mysuite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mysuite" title="com.core.mysuite.TestCaseExecutor" hash-for-method="testCases(TC_003, , N)">testCases(TC_003, , N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-mysuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-mysuite" class="hide-methods passed suite-mysuite"> (hide)</a> <!-- hide-methods passed suite-mysuite -->
+                      <a href="#" panel-name="suite-mysuite" class="show-methods passed suite-mysuite"> (show)</a> <!-- show-methods passed suite-mysuite -->
+                    </span>
+                    <div class="method-list-content passed suite-mysuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mysuite" title="com.core.mysuite.TestCaseExecutor" hash-for-method="testCases(TC_002, , Y)">testCases(TC_002, , Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mysuite" title="com.core.mysuite.TestCaseExecutor" hash-for-method="testCases(TC_001, Login Test Case, Y)">testCases(TC_001, Login Test Case, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-mysuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,25 +140,62 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-mysuite" class="panel mysuite">
-          <div class="suite-mysuite-class-failed">
+          <div class="suite-mysuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.core.mysuite.MyTestCase</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.core.mysuite.TestCaseExecutor</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.core.mysuite.MyTestCase.login(MyTestCase.java:31)
+                  <a name="testCases(TC_004, , N)">
+                  </a> <!-- testCases(TC_004, , N) -->
+                  <span class="method-name">testCases</span>
+                  <span class="parameters">(TC_004, , N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Test case skipped as mode set to NO
+	at com.core.mysuite.TestCaseExecutor.testCases(TestCaseExecutor.java:16)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCases(TC_003, , N)">
+                  </a> <!-- testCases(TC_003, , N) -->
+                  <span class="method-name">testCases</span>
+                  <span class="parameters">(TC_003, , N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Test case skipped as mode set to NO
+	at com.core.mysuite.TestCaseExecutor.testCases(TestCaseExecutor.java:16)
 ... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-mysuite-class-failed -->
+          </div> <!-- suite-mysuite-class-skipped -->
+          <div class="suite-mysuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.core.mysuite.TestCaseExecutor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCases(TC_002, , Y)">
+                  </a> <!-- testCases(TC_002, , Y) -->
+                  <span class="method-name">testCases</span>
+                  <span class="parameters">(TC_002, , Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCases(TC_001, Login Test Case, Y)">
+                  </a> <!-- testCases(TC_001, Login Test Case, Y) -->
+                  <span class="method-name">testCases</span>
+                  <span class="parameters">(TC_001, Login Test Case, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-mysuite-class-passed -->
         </div> <!-- panel mysuite -->
         <div panel-name="test-xml-mysuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -147,7 +208,7 @@
 &lt;suite name=&quot;mysuite&quot;&gt;
   &lt;test name=&quot;Selenium TestNG - 1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.core.mysuite.MyTestCase&quot;/&gt;
+      &lt;class name=&quot;com.core.mysuite.TestCaseExecutor&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Selenium TestNG - 1 --&gt;
 &lt;/suite&gt; &lt;!-- mysuite --&gt;
@@ -187,16 +248,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'com.core.mysuite.MyTestCase')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'testCases')
+data.setCell(0, 2, 'com.core.mysuite.TestCaseExecutor')
+data.setCell(0, 3, 36753);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCases')
+data.setCell(1, 2, 'com.core.mysuite.TestCaseExecutor')
+data.setCell(1, 3, 14475);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCases')
+data.setCell(2, 2, 'com.core.mysuite.TestCaseExecutor')
+data.setCell(2, 3, 11);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCases')
+data.setCell(3, 2, 'com.core.mysuite.TestCaseExecutor')
+data.setCell(3, 3, 10);
 window.suiteTableData['mysuite']= { tableData: data, tableDiv: 'times-div-mysuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-mysuite">
               </div> <!-- times-div-mysuite -->
             </div> <!-- times-div -->
@@ -222,20 +295,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.core.mysuite.MyTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.core.mysuite.TestCaseExecutor</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initializations</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-method before">
-                <span class="method-name">testCaseExecution(public void com.core.mysuite.MyTestCase.login() throws java.lang.Exception)</span>
-                <span class="method-start">304 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">login</span>
-                <span class="method-start">373 ms</span>
+                <span class="method-name">testCases(TC_001, Login Test Case, Y)</span>
+                <span class="method-start">736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCases(TC_002, , Y)</span>
+                <span class="method-start">37500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCases(TC_003, , N)</span>
+                <span class="method-start">51985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCases(TC_004, , N)</span>
+                <span class="method-start">52006 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

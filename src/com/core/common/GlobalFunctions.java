@@ -22,6 +22,7 @@ import com.core.util.ReadExcel;
 public class GlobalFunctions {
 
 public WebDriver driver;
+public static ReadExcel excel;
 public static ReadExcel readExcel;
 public static ReadExcel loginExcel;
 public FileInputStream fis;
@@ -45,6 +46,12 @@ public void initialize() throws Exception{
 		AppLogs.debug("Properties file loaded successfully");
 		
 		//excel files
+		
+		AppLogs.debug("Loading excel file");
+		excel = new ReadExcel(System.getProperty("user.dir")+"\\src\\com\\core\\data\\KeywordDriven.xls");
+		AppLogs.debug("File loaded successfully");
+		
+		
 		AppLogs.debug("Loading excel file");
 		readExcel = new ReadExcel(System.getProperty("user.dir")+"\\src\\com\\core\\data\\MyTestCases.xls");
 		AppLogs.debug("File loaded successfully");
@@ -54,6 +61,30 @@ public void initialize() throws Exception{
 		AppLogs.debug("File loaded successfully");
 		isInitialized=true;
 	}
+}
+
+public void getKeywordMethod(String keyword, String locType, String locVal, String data){
+	
+	switch(keyword){
+	
+	case "launchBrowser":
+		launchBrowser(data);
+		break;
+		
+	case "enterText":
+		enterText(locType, locVal, data);
+		break;
+
+	case "clickButton":
+		clickButton(locType, locVal);
+		break;
+		
+	case "verifyText":
+		verifyText(locType, locVal, data);
+		break;
+	}
+
+
 }
 public void launchBrowser(String url){
 		

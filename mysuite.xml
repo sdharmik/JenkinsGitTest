@@ -2,7 +2,7 @@
 
     <test name="Selenium TestNG - 1">		
 		<classes>
-			<class name="com.core.mysuite.MyTestCase" />	
+			<class name="com.core.mysuite.TestCaseExecutor" />	
 						
 		</classes>
 	</test>

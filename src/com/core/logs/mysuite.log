@@ -1,6 +1,22 @@
-27/11/2016 15:07:38 devpinoyLogger Loading properties file
-27/11/2016 15:07:38 devpinoyLogger Properties file loaded successfully
-27/11/2016 15:07:38 devpinoyLogger Loading excel file
-27/11/2016 15:07:38 devpinoyLogger File loaded successfully
-27/11/2016 15:07:38 devpinoyLogger Loading individual test case excel file
-27/11/2016 15:07:38 devpinoyLogger File loaded successfully
+03/12/2016 20:30:53 devpinoyLogger Loading properties file
+03/12/2016 20:30:53 devpinoyLogger Properties file loaded successfully
+03/12/2016 20:30:53 devpinoyLogger Loading excel file
+03/12/2016 20:30:53 devpinoyLogger File loaded successfully
+03/12/2016 20:30:53 devpinoyLogger Loading excel file
+03/12/2016 20:30:53 devpinoyLogger File loaded successfully
+03/12/2016 20:30:53 devpinoyLogger Loading individual test case excel file
+03/12/2016 20:30:53 devpinoyLogger File loaded successfully
+03/12/2016 20:31:08 devpinoyLogger Entering text in text box
+03/12/2016 20:31:09 devpinoyLogger Text entered successfully
+03/12/2016 20:31:09 devpinoyLogger Entering text in text box
+03/12/2016 20:31:09 devpinoyLogger Text entered successfully
+03/12/2016 20:31:09 devpinoyLogger Clicking Button
+03/12/2016 20:31:23 devpinoyLogger Button clicked successfully
+03/12/2016 20:31:23 devpinoyLogger Clicking Button
+03/12/2016 20:31:28 devpinoyLogger Button clicked successfully
+03/12/2016 20:31:28 devpinoyLogger Retrieving text
+03/12/2016 20:31:30 devpinoyLogger Text retrieved successfully
+03/12/2016 20:31:30 devpinoyLogger Verifying text
+03/12/2016 20:31:30 devpinoyLogger Text verified successfully
+03/12/2016 20:31:44 devpinoyLogger Test Case TC_003execution skipped as test case mode set to No
+03/12/2016 20:31:44 devpinoyLogger Test Case TC_004execution skipped as test case mode set to No
