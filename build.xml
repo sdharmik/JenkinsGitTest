@@ -109,6 +109,10 @@
 	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
 	        </xslt>
 	    </target>
+	
+	<target name="jar" description="JARs the Task" depends="compile">
+	        <jar destfile="MyTask.jar" basedir="${test.dest}"/>
+	    </target>
 
     <!-- ****************** targets not used ****************** -->
  
